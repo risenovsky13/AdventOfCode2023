@@ -2,8 +2,8 @@
 
 internal class Program
 {
-    static int[] matchesQuantity;
     static int[] instances = new int[File.ReadAllLines("puzzle.txt").Count()];
+    static int[] matchesQuantity = new int[instances.Length];
     static int total;
 
     static void CountInstances(int matches, int index)
